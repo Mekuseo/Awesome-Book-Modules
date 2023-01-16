@@ -3,14 +3,14 @@ import updateClock from './modules/clock.js';
 import display from './modules/display.js';
 
 const form = document.querySelector('.main-form-form');
+const formTitle = document.querySelector('.main-form-form-title');
+const formAuthor = document.querySelector('.main-form-form-author');
 const newBookSection = document.querySelector('.add-new-book');
 const bookListSection = document.querySelector('.book-list-display');
 const contactSection = document.querySelector('.contact-info');
 const newBtn = document.querySelector('#new');
 const listBtn = document.querySelector('#list');
 const contactBtn = document.querySelector('#contact');
-const formTitle = document.querySelector('.main-form-form-title');
-const formAuthor = document.querySelector('.main-form-form-author');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -43,11 +43,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+// Show current date
+setInterval(updateClock, 1000);
+
 bookListSection.style.display = 'none';
 contactSection.style.display = 'none';
 
 newBtn.addEventListener('click', () => {
-  display(newBookSection, bookListSection, contactSection);
+  display(newBookSection, contactSection);
 });
 
 listBtn.addEventListener('click', () => {
@@ -57,5 +60,3 @@ listBtn.addEventListener('click', () => {
 contactBtn.addEventListener('click', () => {
   display(contactSection, newBookSection, bookListSection);
 });
-
-setInterval(updateClock, 1000);

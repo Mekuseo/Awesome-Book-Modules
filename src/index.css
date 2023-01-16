@@ -60,11 +60,6 @@ nav {
 
 .main-books-list-ul {
   list-style-type: none;
-  padding: 10px 30px;
-}
-
-.main-books-list-ul td {
-  padding:0 20px;
 }
 
 .main-books-list-ul-li-hr {
@@ -115,7 +110,7 @@ nav {
 .main-books-list-ul-li {
   padding: 10px;
 }
-/* 
+
 .main-books-list-ul-li:nth-child(odd) {
   background-color: lightgray;
 }
@@ -123,7 +118,7 @@ nav {
 .main-books-list-ul-li-author::before {
   content: "\00a0 ";
   display: inline;
-} */
+}
 
 .main-books-list-ul-li-button {
   padding: 5px;
@@ -148,10 +143,4 @@ nav {
 
 .contact-info p {
   padding-bottom: 30px;
-}
-
-.main-books-list-ul-li-remove {
-  background-color: red;
-  color: white;
-  padding:5px;
 }
