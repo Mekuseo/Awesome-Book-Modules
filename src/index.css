@@ -64,7 +64,7 @@ nav {
 }
 
 .main-books-list-ul td {
-  padding:0 20px;
+  padding: 0 20px;
 }
 
 .main-books-list-ul-li-hr {
@@ -115,15 +115,6 @@ nav {
 .main-books-list-ul-li {
   padding: 10px;
 }
-/* 
-.main-books-list-ul-li:nth-child(odd) {
-  background-color: lightgray;
-}
-
-.main-books-list-ul-li-author::before {
-  content: "\00a0 ";
-  display: inline;
-} */
 
 .main-books-list-ul-li-button {
   padding: 5px;
@@ -153,5 +144,5 @@ nav {
 .main-books-list-ul-li-remove {
   background-color: red;
   color: white;
-  padding:5px;
+  padding: 5px;
 }
